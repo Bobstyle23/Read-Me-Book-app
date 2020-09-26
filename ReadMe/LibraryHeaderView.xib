@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LibraryHeaderView" customModule="ReadMe" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LibraryHeaderView" customModule="ReadMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookTexture" translatesAutoresizingMaskIntoConstraints="NO" id="z6V-lx-bZo">
+                    <rect key="frame" x="0.0" y="-3" width="412" height="66"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read Me!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHf-oZ-mfB">
+                    <rect key="frame" x="134.5" y="16" width="143" height="28"/>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="z6V-lx-bZo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6dd-ho-ds6"/>
+                <constraint firstItem="CHf-oZ-mfB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.347087" id="ELe-aq-KAW"/>
+                <constraint firstItem="z6V-lx-bZo" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Goi-hN-0gQ"/>
+                <constraint firstItem="CHf-oZ-mfB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I9W-YR-VIQ"/>
+                <constraint firstItem="z6V-lx-bZo" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1.1" id="pyh-39-X5R"/>
+                <constraint firstItem="z6V-lx-bZo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sWg-tM-oGx"/>
+                <constraint firstItem="CHf-oZ-mfB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wG7-qJ-x83"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="CHf-oZ-mfB" id="OvB-fg-o4J"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BookTexture" width="1000" height="196"/>
+    </resources>
+</document>
